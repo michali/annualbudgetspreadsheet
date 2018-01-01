@@ -11,6 +11,8 @@ Every night between 12 and 1 am local time, a trigger is fired to do the followi
 - Calculate the sum for each category and push into the newly created tables in the expenses tab.
 - Calculate the sum for pay slip income for every month in the year and push that into the Payslip category in the Income tab.
 
+The script's entry point is function refreshSheets() in Main.gs
+
 ### Limitations / issues
 - The categories in the categories tab have no unique identifier against them, parsing and adding transaction to Expenses is done by text comparison, so it's important that categories in column B in Categories tab have unique names.
 - The only income that the script calculates is payslips. Anything else has to be filled manually in the Income tab in the rows below Payslip.
