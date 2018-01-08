@@ -6,7 +6,7 @@ function CategoriesSheet() {
 inheritsFrom(CategoriesSheet, Worksheet);
 
 CategoriesSheet.prototype.getCategoryGroups = function(){  
-  var range = this._sheet.getRange(this._startingCategoryTypeIndex, 1, this._sheet.getLastRow() - this._startingCategoryTypeIndex, 2);
+  var range = this._sheet.getRange(this._startingCategoryTypeIndex, 1, this._sheet.getLastRow() - this._startingCategoryTypeIndex + 1, 2);
   var values = range.getValues();
   var categoryGroups = [];  
   var categoryGroup;
